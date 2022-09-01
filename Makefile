@@ -1,6 +1,13 @@
-.PHONY: image
+CONMAN=docker
 
+.PHONY: clean
+clean:
+	$(CONMAN) image rm --force my-chat || true
+
+
+.PHONY: image
 image:
-	docker build --tag simple-chat-server .
+	#cd server && make build
+	$(CONMAN) build --tag my-chat .
 
 

@@ -118,7 +118,7 @@ func main() {
 	})
 
 	// Run server
-	err := http.ListenAndServe(":40080", nil)
+	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Println("while running server:", err)
 	}

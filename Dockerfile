@@ -5,7 +5,7 @@ COPY server/* ./
 RUN go mod download
 RUN go build -o /app/server-bin
 
-EXPOSE 40080
+EXPOSE 8080
 RUN adduser -H -D -u 1001 me
 USER me:me
 CMD [ "/app/server-bin" ]
