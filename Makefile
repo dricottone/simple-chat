@@ -1,4 +1,4 @@
-CONMAN=docker
+CONMAN=sudo docker
 
 .PHONY: clean
 clean:
