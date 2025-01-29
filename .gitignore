@@ -1,3 +1,4 @@
+server/go.mod
 server/go.sum
 server/server
 
