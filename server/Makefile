@@ -4,7 +4,7 @@ clean:
 	rm -f server go.mod go.sum
 
 go.mod:
-	go mod init git.sr.ht.com/~dricottone/simple-chat/server
+	go mod init tangled.org/dominic-ricottone.com/simple-chat/server
 	go get github.com/gorilla/websocket
 
 server: go.mod $(SRC)
